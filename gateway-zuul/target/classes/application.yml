@@ -1,0 +1,15 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: gateway-zuul
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:root@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+# 禁用认证
+management:
+  security:
+    enabled: false
